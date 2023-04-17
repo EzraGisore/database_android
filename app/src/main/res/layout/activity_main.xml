@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-14dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Enter email address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/edt_name"
+        app:layout_constraintTop_toBottomOf="@+id/edt_name" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="191dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Enter ID number"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/edt_email"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="401dp"
+        android:layout_height="374dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_name">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginBottom="319dp"
+            android:text="SAVE" />
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="73dp"
+            android:layout_marginBottom="320dp"
+            android:text="VIEW" />
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="156dp"
+            android:layout_marginBottom="197dp"
+            android:text="DELETE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
